@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | WebArTest</title>
+    <title>Unity WebGL Player | Archiviz</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -19,19 +19,19 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">WebArTest</div>
+        <div id="unity-build-title">Archiviz</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/BUILD.loader.js";
+      var loaderUrl = buildUrl + "/Appgl.loader.js";
       var config = {
-        dataUrl: buildUrl + "/BUILD.data",
-        frameworkUrl: buildUrl + "/BUILD.framework.js",
-        codeUrl: buildUrl + "/BUILD.wasm",
+        dataUrl: buildUrl + "/Appgl.data",
+        frameworkUrl: buildUrl + "/Appgl.framework.js",
+        codeUrl: buildUrl + "/Appgl.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "WebArTest",
+        companyName: "LOMAY",
+        productName: "Archiviz",
         productVersion: "0.1",
       };
 
@@ -45,8 +45,8 @@
         container.className = "unity-mobile";
         config.devicePixelRatio = 1;
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "100%";
+        canvas.style.height = "100vh";
       }
       loadingBar.style.display = "block";
 
